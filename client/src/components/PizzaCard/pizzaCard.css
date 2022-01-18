@@ -1,0 +1,17 @@
+h1{
+    font-size: 20px !important;
+}
+
+.flex-container{
+    display: flex !important;
+}
+select{
+    box-shadow: none !important;
+    border-color: black !important;
+}
+
+.review-container{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}

@@ -1,0 +1,10 @@
+.active span{
+    background-color: #DD4145 !important;
+    color: white !important;
+    border: 1px solid #DD4145 !important;
+    border-radius: 1px;
+}
+
+.inactive span{
+    color: black !important;
+}

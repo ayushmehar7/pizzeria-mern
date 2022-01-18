@@ -1,0 +1,9 @@
+.order-container{
+    background-color: #DD4145;
+    color: aliceblue;
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    justify-content: space-evenly;
+    margin: 10px;
+}
