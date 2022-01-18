@@ -23,8 +23,8 @@ const PizzaCard = ({pizza})=>{
         <React.Fragment>
         <div className="col-md-4 p-3" >
             <div className="shadow-lg p-3 mb-5 bg-white rounded">
-                <h1>{pizza.name}</h1>
                 <div className="text-center">
+                    <h1>{pizza.name}</h1>
                     <img style={{cursor: "pointer"}} src={pizza.image} width="300px" height="300px" alt="pizza" className="img-fluid" onClick={()=> setShow(true)} />
                 </div>
                 <div className="flex-container">
