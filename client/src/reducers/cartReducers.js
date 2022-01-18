@@ -5,10 +5,12 @@ export const cartReducer = (state = {cart : []}, action) =>{
         const filteredCart = state.cart.filter(item => item.id === action.payload.id)
         if(filteredCart.length){
             const originalItem = action.payload
-            const newCart = state.cart.filter(item => item.id !== action.payload.id)
+            const ind = state.cart.findIndex(item=> item.id === action.payload.id)
+            const newCart = [...state.cart]
+            newCart[ind] = originalItem
             return {
                 ...state,
-                cart: [...newCart, originalItem]
+                cart: newCart
             }
         }
         return {
